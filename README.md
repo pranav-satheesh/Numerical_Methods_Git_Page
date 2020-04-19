@@ -2,8 +2,6 @@
 <<<<<<< HEAD
 ##Git Hub Page for Numerical Methods Course
 
-### List of Contents
-=======
 Git Hub Page for Numerical Methods in Physics. You will find various C++ and Python files for the topics listed below. We will also include some exercises.
 
 ## List of Contents:
@@ -18,4 +16,3 @@ Ok
 7. Curve fitting 
 8. Monte Carlo
 
->>>>>>> 061960972da7ada7e4579c824142bdfbb78f8c9a
