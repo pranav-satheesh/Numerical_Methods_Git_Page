@@ -4,7 +4,7 @@
 
 Git Hub Page for Numerical Methods in Physics. You will find various C++ and Python files for the topics listed below. We will also include some exercises.
 
-![image](https://github.com/pranavastro/Numerical_Methods_Git_Page/blob/master/ODE_ADVANCED/3dplot.pdf)
+![image](https://github.com/pranavastro/Numerical_Methods_Git_Page/blob/master/download.png)
 
 ## List of Contents:
 
