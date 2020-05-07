@@ -4,6 +4,8 @@
 #include<assert.h>
 using namespace std;
 
+
+//* The Baseball Trajectory program utilises three different algorithms to solve basic ODES*//
 int main()
 {
 
@@ -94,6 +96,27 @@ for(istep=0; istep<=maxstep; istep++){
 	r[1] += tau*v[1];
 	v[0] += tau*a[0];
 	v[1] += tau*a[1];
+
+
+	/*Euler-Cromer Method
+
+	v[0] += tau*a[0];
+	v[1] += tau*a[1];
+	r[0] += tau*v[0];
+	r[1] += tau*v[1];
+        
+        */
+
+	
+	/*Midpoint Method
+
+	v[0] += tau*a[0];
+	v[1] += tau*a[1];
+
+	r[0] += tau*v[0]+0.5*tau*tau*a[0];
+	r[1] += tau*v[1]+0.5*tau*tau*a[1];
+        
+        */
 	
 	cout<<r[0]<<r[1]<<v[0]<<v[1];
 

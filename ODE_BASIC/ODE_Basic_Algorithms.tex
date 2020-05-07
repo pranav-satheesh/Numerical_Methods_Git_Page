@@ -78,7 +78,7 @@ We can have the midpoint of velocities between vn and vn+1
 
 Plugging the velcoity equation into the position equation, we see that
 
-$$ \textbf{r}_{n+1} = \textbf{r}_{n} + \tau \textbf{v}_{n} + \tau \textbf{v}_{n} + \frac{1}{2} \textbf{a}_{n} \tau^{2}$$
+$$ \textbf{r}_{n+1} = \textbf{r}_{n} + \tau \textbf{v}_{n} + \frac{1}{2} \textbf{a}_{n} \tau^{2}$$
 
 The order is $\mathcal{O}(\tau^{3})$
 
@@ -86,16 +86,71 @@ The order is $\mathcal{O}(\tau^{3})$
 
 global error = $ N_{\tau}$ x (local error) = (T/$ \tau $)$ \mathcal{O}(\tau^{n}) = T\mathcal{O}(\tau^{n-1})$
 
+\section*{Centered derivative formulas}
+
+The Euler Method was based on the right derivative formulation for df.dt. Now we can use the centered derivative formula on ODE algorithms.
+
+$$ f^{'}(t) = \lim_{\tau \rightarrow 0} \frac{f(t+\tau)-f(t-\tau)}{2 \tau}$$
+
+Using the taylor series expansion of $ f(t+\tau) $ and $ f(t-\tau)$, we ger
+
+$$f^{'}(t) = \frac{f(t+\tau)-f(t-\tau)}{2 \tau} - \frac{1}{6} \tau^{2} f^{3}(\zeta)$$
+
+where $ t-\tau \leq \zeta \leq t+\tau $.
+
+In this \emph{centered first derivative approximation} the truncation error is now quadratic in $\tau$, which is better when compared to the basi Euler algorithm.
+
+We also see that, we can build the second derivative in a similar fashion
+
+$$
+f^{''}(t) = \frac{f(t+\tau)-f(t-\tau)-2f(t)}{\tau^2} - \frac{1}{12} \tau^{2} f^{4}(\zeta)
+$$ where$ t-\tau \leq \zeta \leq t+\tau $.
 
 
+\subsection*{Leap-Frog method}
+
+Starting from the equations of motion,
+
+\begin{align*}
+\frac{d\textbf{v}}{dt}&= \textbf{a}(\textbf{r}(t))\\
+\frac{d\textbf{r}}{dt}&= \textbf{v}(t)
+\end{align*}
+
+Now,
+
+$$\frac{\textbf{v}(t+\tau)-\textbf{v}(t-\tau)}{2 \tau} + \mathcal{O}(\tau^{2}) = \textbf{a}(\textbf{r}(t))$$
+
+For position, we are centering it between $ t+2\tau $ and $ t $. The reason will be apparent soon.
+
+$$\frac{\textbf{r}(t+2 \tau)-\textbf{r}(t-\tau)}{2 \tau} + \mathcal{O}(\tau^{2}) = \textbf{v}(t+\tau)$$
+
+Rearranging the terms and using our previous notation,
+
+\begin{align*}
+\textbf{v}_{n+1}&=\textbf{v}_{n-1} + 2\tau a(\textbf{r}_n) + \mathcal{O}(\tau^{3})\\
+\textbf{r}_{n+2}&=\textbf{r}_{n} + 2\tau \textbf{v}_{n+1} + \mathcal{O}(\tau^{3})
+\end{align*}
+
+We are advancing in steps of $2\tau$ hence the name 'leap-frog'.
 
 
+\subsection*{Verlet Method}
 
+Using the central difference formulas for first and second derivatives, we have
 
+\begin{align*}
+\frac{r_{n+1} - r_{n-1}}{2 \tau} + \mathcal{O}(\tau^{2})&=v_n\\
+\frac{r_{n+1} - r_{n-1} - 2r_n}{\tau^{2}} + \mathcal{O}(\tau^{2})&=a_n
+\end{align*}
 
+Rearranging terms,
 
+\begin{align*}
+\textbf{v}_{n}&= \frac{\textbf{r}_{n+1}-\textbf{r}_{n-1}}{2 \tau} + \mathcal{0}(\tau^2)\\
+\textbf{r}_{n+1}&= 2 \textbf{r}_{n} - \textbf{r}_{n-1} + \tau^{2} \textbf{a}_{n} + \mathcal{O}(\tau^{4})
+\end{align*}
 
-
+The truncation error is of the fourth order which is a great improvement compared to other methods.
 
 
 
