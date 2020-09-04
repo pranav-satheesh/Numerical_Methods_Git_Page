@@ -6,7 +6,7 @@ Git Hub Page for Numerical Methods in Physics. You will find various C++ and Pyt
 
 
 ![image](https://github.com/pranavastro/Numerical_Methods_Git_Page/blob/master/download.png)
-<Lorentz 3D plot>
+*Lorentz 3D plot*
 
 ## List of Contents:
 
