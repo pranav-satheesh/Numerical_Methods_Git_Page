@@ -1,0 +1,18 @@
+SHELL=/bin/sh
+
+SRC=matrixtest.cpp
+SRC2=matrixmethods.cpp
+
+OBJ=matrixtest.o
+OBJ2=matrixmethods.o
+
+EXE=Output
+
+run:
+	g++ -c $(SRC) $(SRC2) 	  
+	g++ -o $(EXE) $(OBJ) $(OBJ2)  
+	./$(EXE)     
+               
+	
+#Hi:
+#   echo "Hi"

@@ -4,7 +4,7 @@ class Matrix{
 
 public:
 
-//Defaullt constructor. Creates a 1X1 matrix of value zeros.
+//Default constructor. Creates a 1X1 matrix of value zeros.
 
 Matrix(){
 
@@ -28,10 +28,75 @@ assert(data!=0); // check memory was allocated
 set(0.0); // Set values of data[] to 0.0
 }
 
-//Copy Constructor
-//Used when a copy of an object is produced (e.g, passing to a function by value)
 
-Matrix(const Matrix& mat){
+//Destructor. Called when a Matrix object goes out of scope.
+~Matrix(){
+delete [] data_;
+}
+
+
+int nRow()
+{return nRow_;}
+
+int nCol()
+{return nCol_;}
+
+
+void set(double value)
+{ 
+int i, idata = nRow_*nCol_;
+for(int i=0; i<idata, i++)
+	data_[i] = value;
+}
+
+void matrix_enter()
+{
+for(int i=0;i<nRow_;i++)
+{
+for(int j=0;j<nCol_;j++)
+
+cout<<"Enter the"<<i+1<<"\t"<<j+1<<"term:"<<endl;
+cin>>data
+
+}|
+void show_matrix();
+
+
+private:
+
+//Matrix data
+int nRow_,nCol_;
+double* data_
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 this->copy(mat); //Call private copy function.
 }
 

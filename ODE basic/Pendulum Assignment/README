@@ -1,0 +1,19 @@
+
+*******************Assignment submitted by Pranav PH17B008***********************************
+
+> "Assignmentdoc.pdf" contains the answers to the theory questions and also contains discussion on the plots obtained
+
+> The program files are Odefunctions.h
+			 Odefunctions.cpp
+			 main.cpp
+> To compile, open terminal and run the command "g++ main.cpp Odefunctions.cpp"
+
+> There are 6 GNUPLOT scripts for my plots. Run them using gnuplot "filename.p"
+
+
+contact me @ph17b008@smail.iitm.ac.in for any queries.
+
+Cheers!
+
+***********************************************************************************************
+
