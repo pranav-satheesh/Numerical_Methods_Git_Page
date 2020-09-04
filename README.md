@@ -6,7 +6,7 @@ Git Hub Page for Numerical Methods in Physics. You will find various C++ and Pyt
 
 
 ![image](https://github.com/pranavastro/Numerical_Methods_Git_Page/blob/master/download.png)
-*Lorentz 3D plot*
+*The famous Lorenz Attractor solved using a c++ routine. You can find it in ODE advanced*
 
 ## List of Contents:
 
