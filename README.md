@@ -19,3 +19,9 @@ Git Hub Page for Numerical Methods in Physics. You will find various C++ and Pyt
 7. Curve fitting 
 8. Monte Carlo
 
+## Jupyter Notebooks and Google colab
+
+I have added jupyter notebooks for various topics which can be opened using google colab in your browser directly. Please find the link below.
+
+1. *Root Finding* :
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pranavastro/Numerical_Methods_Git_Page/blob/master/Non%20linear%20equations/Root%20Finding%20Python/Root%20Finding.ipynb)
