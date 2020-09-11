@@ -29,6 +29,6 @@ I have added jupyter notebooks for various topics which can be opened using goog
   * Exercise on Finite Potential Well problem:
   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pranavastro/Numerical_Methods_Git_Page/blob/master/Non%20linear%20equations/Root%20Finding%20Python/Finite%20Potential%20Well.ipynb)
 
-<img src="https://github.com/pranavastro/Numerical_Methods_Git_Page/blob/master/Non%20linear%20equations/Root%20Finding%20Python/evenstates.png" alt="alt text" width="100" height="100">
+<img src="https://github.com/pranavastro/Numerical_Methods_Git_Page/blob/master/Non%20linear%20equations/Root%20Finding%20Python/evenstates.png" alt="Even States" width="500" height="500">
 
-
+<img src="https://github.com/pranavastro/Numerical_Methods_Git_Page/blob/master/Non%20linear%20equations/Root%20Finding%20Python/oddstates.png" alt="OddStates" width="500" height="500">
